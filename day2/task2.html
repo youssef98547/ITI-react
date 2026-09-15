@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Black Goose Bistro | Pizza-on-Demand</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Main</a>
+      <a href="#">Make an Order</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+    <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+    <p>
+      Our 12" wood-fired pizza are available for delivery, build your custom
+      pizza and we'll deliver it within an hour.
+    </p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <p>
+          <label for="fullName">Name</label><br />
+          <input type="text" id="fullName" name="fullName" />
+        </p>
+
+        <p>
+          <label for="homeAddress">Address :</label><br />
+          <input type="text" id="homeAddress" name="homeAddress" />
+        </p>
+
+        <p>
+          <label for="phoneNum">Telephone Number :</label><br />
+          <input type="tel" id="phoneNum" name="phoneNum" />
+        </p>
+
+        <p>
+          <label for="mailAddress">Email :</label><br />
+          <input type="email" id="mailAddress" name="mailAddress" />
+        </p>
+
+        <p>
+          <label for="deliveryNotes">Delivery Instruction :</label><br />
+          <textarea
+            id="deliveryNotes"
+            name="deliveryNotes"
+            rows="4"
+            cols="30"
+            maxlength="400"
+            placeholder="No more than 400 character long"
+          ></textarea>
+        </p>
+      </fieldset>
+
+      <h2>Design Your Dream Pizza:</h2>
+
+      <fieldset>
+        <legend>Pizza specs</legend>
+
+        <fieldset>
+          <legend>Crust (Choose one):</legend>
+
+          <p>
+            <input type="radio" id="c1" name="crust" value="classic-white" />
+            <label for="c1">Classic White</label>
+          </p>
+          <p>
+            <input type="radio" id="c2" name="crust" value="multigrain" />
+            <label for="c2">Multigrain</label>
+          </p>
+          <p>
+            <input type="radio" id="c3" name="crust" value="cheese-stuffed" />
+            <label for="c3">Choose-stuffed crust</label>
+          </p>
+          <p>
+            <input type="radio" id="c4" name="crust" value="gluten-free" />
+            <label for="c4">Gluten-free</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Toppings (Choose as many as you want):</legend>
+
+          <p>
+            <input type="checkbox" id="t1" name="toppings" value="red-sauce" />
+            <label for="t1">Red Sauce</label>
+          </p>
+          <p>
+            <input
+              type="checkbox"
+              id="t2"
+              name="toppings"
+              value="white-sauce"
+            />
+            <label for="t2">White Sauce</label>
+          </p>
+          <p>
+            <input type="checkbox" id="t3" name="toppings" value="mozzarella" />
+            <label for="t3">Mozzarella Cheese</label>
+          </p>
+          <p>
+            <input type="checkbox" id="t4" name="toppings" value="pepperoni" />
+            <label for="t4">Pepperoni</label>
+          </p>
+          <p>
+            <input type="checkbox" id="t5" name="toppings" value="mushrooms" />
+            <label for="t5">Mushrooms</label>
+          </p>
+          <p>
+            <input type="checkbox" id="t6" name="toppings" value="peppers" />
+            <label for="t6">Peppers</label>
+          </p>
+          <p>
+            <input type="checkbox" id="t7" name="toppings" value="anchovies" />
+            <label for="t7">Anchovies</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Number</legend>
+
+          <p>
+            <label for="pizzaCount">How many pizzas:</label>
+            <input type="text" id="pizzaCount" name="pizzaCount" />
+          </p>
+        </fieldset>
+      </fieldset>
+
+      <button type="submit">Bring me a pizza!</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
