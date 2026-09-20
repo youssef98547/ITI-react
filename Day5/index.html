@@ -17,7 +17,7 @@
         <p> Our 12" wood-fired pizza are available for delivery, build your custom pizza and we'll deliver it within an hour. </p>
     </header>
     <main>
-        
+        <form>
             <fieldset> 
                 <legend>Your Information</legend>
                 <div>
@@ -45,24 +45,22 @@
                     <textarea id="instruction" name="instruction" rows="4" cols="50" placeholder="No more than 400 character long"></textarea>
                 </div>
             </fieldset>
-        </form>
-        <h2> Design Your Dream Pizza :</h2>
-            <form>
+                <h2> Design Your Dream Pizza :</h2>
                 <fieldset>
                     <legend>Pizza specs</legend>
                     <fieldset>
                         <legend>Crust ( Choose one ) :</legend>
                         <br>
-                        <input type="radio" id="Classic" name="crust" value="Classic" required />
+                        <input type="radio" id="Classic" name="crust" value="Classic"  />
                         <label for="Classic">Classic White</label>
                         <br>
-                        <input type="radio" id="Multigrain" name="crust" value="Multigrain" required />
+                        <input type="radio" id="Multigrain" name="crust" value="Multigrain"  />
                         <label for="Multigrain"> Multigrain</label>
                         <br>
-                        <input type="radio" id="stuffed" name="crust" value="stuffed" required />
+                        <input type="radio" id="stuffed" name="crust" value="stuffed"  />
                         <label for="stuffed"> Choose-stuffed crust</label>
                         <br>
-                        <input type="radio" id="glutenfree" name="crust" value="glutenfree" required />
+                        <input type="radio" id="glutenfree" name="crust" value="glutenfree"  />
                         <label for="glutenfree"> Gluten-free</label>
                     </fieldset>
                     <fieldset>
@@ -72,7 +70,7 @@
                         <input type="checkbox" id="red" name="topping" value="red" />
                         <label for="red">Red sauce</label>
                         <br>
-                        <input type="checkbox" id="green" name="topping" value="green" />
+                        <input type="checkbox" id="white" name="topping" value="white" />
                         <label for="white">White sauce</label>
                         <br>
                         <input type="checkbox" id="cheese" name="topping" value="cheese" />
@@ -87,22 +85,19 @@
                         <input type="checkbox" id="peppers" name="topping" value="peppers" />
                         <label for="peppers">Peppers</label>
                         <br>
-                        <input type="checkbox" id="peppers" name="topping" value="peppers" />
-                        <label for="peppers"> Peppers</label>
-                        <br>
                         <input type="checkbox" id="anchovies" name="topping" value="anchovies" />
                         <label for="anchovies">Anchovies</label>
                     </fieldset>
                     <fieldset>
                         <legend> Number :</legend>
-                        <lsabel for="number">How many pizza : </label>
+                        <label for="number">How many pizza : </label>
                         <input type="number" id="number" name="number" min="1" max="10" required />
                     </fieldset>
                 </fieldset>
+                <br>
+                <input type="submit" value="Bring me pizza!" />
+                <input type="reset" value="Reset" />
         </form>
-        <br>
-        <input type="submit" value="Bring me pizza!" />
-        <input type="reset" value="Reset" />
-       </main>
+    </main>
   </body>
 </html>
